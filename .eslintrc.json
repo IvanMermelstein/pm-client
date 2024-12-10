@@ -1,3 +1,28 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "semi": ["error", "always"], // Enforce semicolons
+    "quotes": ["error", "single"], // Enforce single quotes
+    "indent": ["error", 2], // Enforce 2-space indentation
+    "no-trailing-spaces": "error", // Disallow trailing whitespaces
+    "eol-last": ["error", "always"], // Enforce newline at end of files
+    "comma-dangle": ["error", "never"], // Disallow trailing commas
+    "react/react-in-jsx-scope": "off", // Next.js doesn't require React in scope
+    "react/jsx-uses-react": "off", // Since React 17+, this isn't needed
+    "object-curly-spacing": ["error", "always"], // Enforces spaces inside curly braces
+    "react/jsx-curly-spacing": ["error", { "when": "always", "children": true }] // Enforces spaces in JSX expressions
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
