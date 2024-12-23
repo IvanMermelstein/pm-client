@@ -25,7 +25,7 @@ const Navbar = () => {
           <Settings className='h-6 w-6 cursor-pointer dark:text-white' />
         </Link>
         <div className='ml-2 mr-5 hidden min-h-[2em] w-[0.1rem] bg-slate-200 md:inline-block'>
-          asd
+          
         </div>
       </div>
     </div>
