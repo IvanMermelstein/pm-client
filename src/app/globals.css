@@ -15,6 +15,6 @@ body,
   height: 100%;
   width: 100%;
   @apply text-sm;
-  @apply bg-slate-400;
-  @apply text-slate-900;
+  @apply bg-white;
+  @apply dark:bg-black;
 }
