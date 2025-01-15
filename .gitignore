@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/pm-server/node_modules
+/pm-client/node_modules
+/pm-server/.pnp
+/pm-client/.pnp
+/pm-server.pnp.*
+/pm-client.pnp.*
+/pm-server/.yarn/*
+/pm-client/.yarn/*
+!/pm-server/.yarn/patches
+!/pm-server/.yarn/plugins
+!/pm-server/.yarn/releases
+!/pm-server/.yarn/versions
+!/pm-client/.yarn/patches
+!/pm-client/.yarn/plugins
+!/pm-client/.yarn/releases
+!/pm-client/.yarn/versions
+
+# testing
+/pm-server/coverage
+/pm-client/coverage
+
+# next.js (if applicable)
+/pm-server/.next/
+/pm-client/.next/
+/pm-server/out/
+/pm-client/out/
+
+# production
+/pm-server/build
+/pm-client/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files (can opt-in for committing if needed)
+/pm-server/.env*
+/pm-client/.env*
+
+# vercel (if applicable)
+/pm-server/.vercel
+/pm-client/.vercel
+
+# typescript
+/pm-server/*.tsbuildinfo
+/pm-client/*.tsbuildinfo
+/pm-server/next-env.d.ts
+/pm-client/next-env.d.ts
