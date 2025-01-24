@@ -34,7 +34,7 @@ export interface User {
 
 export interface Attachment {
   id: number;
-  fileUrl: string;
+  fileURL: string;
   fileName: string;
   taskId: number;
   uploadedByUserId: number;
@@ -105,5 +105,5 @@ export const api = createApi({
 
 export const {
   useGetProjectsQuery, useCreateProjectMutation,
-  useGetTasksQuery, useCreateTaskMutation,
+  useGetTasksQuery, useCreateTaskMutation, useUpdateTaskStatusMutation
 } = api;
